@@ -1,3 +1,4 @@
+
 <html><head></head><body>
 <div class="modal-backdrop ">
 <div class="modal-dialog modal-lg modal-preview modal-preview-resume " tabindex="-1" role="dialog" aria-label="" aria-modal="true">
@@ -100,7 +101,27 @@
         #document.skn-mli8 .displayNoneThisField{display:none}/* Keep this class always at bottom */
     </style>
 	<style type="text/css" id="dynamic">
-		#FIELD_JTIT : hover { color: red;}
+                #certificate { height:210%;
+                     width:65%;
+                     position:absolute;
+                     transform:translate(45%,-20%);
+                     border: 2px solid black;
+                     opacity: 0;
+                     border: 2px solid #ccc;
+                     background: #eee;
+                      margin: auto;
+                      padding: 2% 2%;
+                      z-index: 1;
+                    }
+                
+               img {
+        width: 100%;
+        height: 100%;
+      }
+
+		#FIELD_JTIT:hover { color: red;
+                                    #a.color: green;
+                                   }
     	#document { width: 1900px; border: 2px solid black;}
         #document.skn-mli8,#document.skn-mli8 table{line-height:13px}
         #document.skn-mli8.pagesize{width:595px}
@@ -161,7 +182,10 @@
     margin-top: 5%;
 "><div id="CONTAINER_PARENT_0" class="topsection"><div id="CONTAINER_0" class="top-box" style="
     transform: translate(55%,2%);
-"><div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling  data-NAME"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_NAMEd9513b0f-fed9-4854-be45-8f920af0c275" class="section notdraggable section SECTION_NAME firstsection     " data-section-cd="NAME"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_NAME_75f507c1-c395-784b-eec9-7de9761c6bbf" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
+">
+
+
+<div data-react-beautiful-dnd-draggable="0" class="sortable-item section-container SortableItem-sibling  data-NAME"><div class="document-tool sec-tool" id="editIcons" style="right: -2px;"></div><div id="SECTION_NAMEd9513b0f-fed9-4854-be45-8f920af0c275" class="section notdraggable section SECTION_NAME firstsection     " data-section-cd="NAME"><div class=" doc-item"><div class=""><div class=""><div id="PARAGRAPH_NAME_75f507c1-c395-784b-eec9-7de9761c6bbf" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
                         <div class="name" dependency="FNAM|LNAM">
                             <span class="field" id="FIELD_FNAM">Manthan</span>
                             <span class="field" id="FIELD_LNAM">Pandey</span>
@@ -250,8 +274,10 @@
                                 <span class="jobdates" id="FIELD_JSTD" format="%B %Y">August 2020</span><span dependency="JSTD+EDDT"> to </span>
                                 <span class="jobdates" id="FIELD_EDDT" format="%B %Y">Current</span><br dependency="JSTD|EDDT">
                             </span>
+                            <span id="certificate"><img src="an.jpeg" alt="Nature"> </span>
                             <span class="dispBlock locationGap" dependency="COMP|JSTA|JCIT|JTIT|JCNT">
-                                <span class="jobtitle txtCaps txt-bold" id="FIELD_JTIT">Associate Software Engineer</a></span>
+                                <span class="jobtitle txtCaps txt-bold" id="FIELD_JTIT" onmouseover="check()" onmouseout="off()">Associate Software Engineer</a></span>
+                                 <script src="test.js"></script>
                                 <span class="companyname txt-bold txtItl" id="FIELD_COMP">MAQ Software</span><span dependency="JTIT|COMP"><span dependency="JSTA|JCIT|JCNT">, </span></span><span class="jobcity" id="FIELD_JCIT">Hyderabad</span><span dependency="JCIT+JSTA|JCNT">, </span>
                                 <span class="jobstate" id="FIELD_JSTA">India</span><span dependency="JSTA+JCNT" style="display: none;">,</span> <span class="joblocation jobcountry" id="FIELD_JCNT"></span>
                             </span>
@@ -293,6 +319,7 @@
                                     <span class="joblocation jobstate" id="FIELD_SSTA"></span> <span dependency="SSTA+SCNT" style="display: none;">, </span><span class="joblocation jobcountry" id="FIELD_SCNT"></span>
                                 </span>
                             </div>
+                   
                             <div class="degreeGap" dependency="GRPA" style="display: none;">
                                 <span>GPA: </span><span class="field" id="FIELD_GRPA"></span>
                             </div>
@@ -340,4 +367,6 @@
                             </div>
                             <span class="field" id="FIELD_FRFM"><p>83.00 %</p></span>
                         </div>
-                    </div></div></div></div></div></div></div></div></div></div></div></div></div><div class="track-horizontal" style="display: none; visibility: hidden;"><div style="position: relative; display: block; height: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); width: 0px; transform: translateX(0px);"></div></div><div class="track-vertical" style="visibility: hidden;"><div style="position: relative; display: block; width: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); height: 0px; transform: translateY(0px);"></div></div></div></div></div></div></div></body></html>
+                    </div></div></div></div></div></div></div></div></div></div></div></div></div><div class="track-horizontal" style="display: none; visibility: hidden;"><div style="position: relative; display: block; height: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); width: 0px; transform: translateX(0px);"></div></div><div class="track-vertical" style="visibility: hidden;"><div style="position: relative; display: block; width: 100%; cursor: pointer; border-radius: inherit; background-color: rgba(0, 0, 0, 0.2); height: 0px; transform: translateY(0px);"></div></div></div></div></div></div></div>
+
+</body></html>
